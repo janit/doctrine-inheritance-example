@@ -13,13 +13,33 @@ Information about Doctrine ORM inheritance:
 This package contains six Doctrine ORM entity classes in `src/Entity` that are configured via 
 annotations. The included entities use inheritance with two methods (`SINGLE_TABLE` and `JOINED`).
 
+There are two separate data structures with the following inheritance:
+
+ - Animal
+   - id
+   - color
+     - Cat
+       - name
+     - Dog
+        - kennel
+
+
+ - Vehicle
+  - id
+   - color
+     - Moped
+       - tuning
+     - Truck
+       - wheelage
+
+
 ### Single table inheritance
 
 The `Animal` base entity class is inherited using `SINGLE_TABLE` strategy by the `Cat` and `Dog`
 sub entities. The generated schema when using this strategy contains a single table with all
 the columns for each sub entity.
 
-#### Animals table 
+#### animal table 
 
 | id | discr | color | name  | kennel         |
 |----|-------|-------|-------|----------------|
@@ -33,8 +53,26 @@ the columns for each sub entity.
 The `Vehicle` base entity class is inherited using `JOINED` strategy by `Truck` and `Moped`
 classes. With this strategy generated schema contains individual tables for each sub entity.
 
-####
+#### vehicle table
 
+| id | color | discr |
+|----|-------|-------|
+| 1  | Blue  | truck |
+| 2  | Red   | truck |
+| 3  | Black | Moped |
+
+#### truck table
+
+| id | wheelage |
+|----|----------|
+| 1  | 10       |
+| 2  | 18       |
+
+#### moped table
+
+| id | tuning  |
+|----|---------|
+| 3  | Regular |
 
 ## Installation
 
