@@ -86,7 +86,6 @@ Once this is done, proceed with installing packages and setting up the database:
 $ composer install
 $ ./bin/console doctrine:database:create
 $ ./bin/console doctrine:schema:update --force
-
 ```
 
 Once the the installation is complete, proceed with running the local devserver:
