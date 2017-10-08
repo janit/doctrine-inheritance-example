@@ -25,7 +25,7 @@ There are two separate data structures with the following inheritance:
 
 
  - Vehicle
-  - id
+   - id
    - color
      - Moped
        - tuning
