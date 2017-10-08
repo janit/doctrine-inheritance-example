@@ -1,9 +1,9 @@
 # Doctrine ORM entity inheritance example (with Symfony Flex)
 
 This is an example of using Doctrine ORM entity inheritance with the Symfony Flex framework.
-It is mostly a reminder to myself, but others may find it useful.
+It is mostly a reminder to myself, but others may find it useful as a reference.
 
-Information about Doctrine ORM inheritance:
+More indepth information about Doctrine ORM inheritance:
 
  - <a href="http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/inheritance-mapping.html">Inheritance Mapping in Doctrine documentation</a>
  - <a href="https://blog.liip.ch/archive/2012/03/27/table-inheritance-with-doctrine.html">Table Inheritance with Doctrine</a>
@@ -45,7 +45,7 @@ the columns for each sub entity.
 |----|-------|-------|-------|----------------|
 | 1  | cat   | black | Jallu |                |
 | 2  | cat   | grey  | Ossi  |                |
-| 3  | dog   | Brown |       | The Dogg Pound |
+| 3  | dog   | brown |       | The Dogg Pound |
   
 
 ### Joined inheritance
@@ -59,7 +59,7 @@ classes. With this strategy generated schema contains individual tables for each
 |----|-------|-------|
 | 1  | Blue  | truck |
 | 2  | Red   | truck |
-| 3  | Black | Moped |
+| 3  | Black | moped |
 
 #### truck table
 
