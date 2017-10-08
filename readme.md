@@ -10,7 +10,7 @@ More indepth information about Doctrine ORM inheritance:
 
 ## Structure and table overview
 
-This package contains six Doctrine ORM entity classes in `src/Entity` that are configured via 
+This package contains six Doctrine ORM entity classes in [src/Entity](https://github.com/janit/doctrine-inheritance-example/tree/master/src/Entity) that are configured via 
 annotations. The included entities use inheritance with two methods (`SINGLE_TABLE` and `JOINED`).
 
 There are two separate data structures:
