@@ -13,7 +13,7 @@ Information about Doctrine ORM inheritance:
 This package contains six Doctrine ORM entity classes in `src/Entity` that are configured via 
 annotations. The included entities use inheritance with two methods (`SINGLE_TABLE` and `JOINED`).
 
-There are two separate data structures with the following inheritance:
+There are two separate data structures:
 
  - Animal
    - id
