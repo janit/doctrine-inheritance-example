@@ -8,7 +8,7 @@ Information about Doctrine ORM inheritance:
  - <a href="http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/inheritance-mapping.html">Inheritance Mapping in Doctrine documentation</a>
  - <a href="https://blog.liip.ch/archive/2012/03/27/table-inheritance-with-doctrine.html">Table Inheritance with Doctrine</a>
 
-## What is included
+## Structures and data description
 
 This package contains six Doctrine ORM entity classes in `src/Entity` that are configured via 
 annotations. The included entities use inheritance with two methods (`SINGLE_TABLE` and `JOINED`).
