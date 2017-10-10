@@ -32,6 +32,13 @@ There are two separate data structures:
      - Truck
        - wheelage
 
+The relationships are configured using annotations in the parent class, for example:
+
+```
+ * @ORM\InheritanceType("SINGLE_TABLE")
+ * @ORM\DiscriminatorColumn(name="discr", type="string")
+ * @ORM\DiscriminatorMap({"animal" = "Animal", "cat" = "Cat", "dog" = "Dog"})
+```
 
 ### Single table inheritance
 
