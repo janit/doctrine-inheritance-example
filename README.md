@@ -53,6 +53,8 @@ the columns for each sub entity.
 | 1  | cat   | black | Jallu |                |
 | 2  | cat   | grey  | Ossi  |                |
 | 3  | dog   | brown |       | The Dogg Pound |
+| 4  | cat   | orange | Justus |                |
+| 5  | cat   | orange  | Waltteri  |                |
   
 
 ### Joined inheritance
